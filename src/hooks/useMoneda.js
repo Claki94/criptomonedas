@@ -26,7 +26,7 @@ const useMoneda = (label, stateInicial, opciones) => {
     // State de nuestro custom hook
     const [state, actualizarState] = useState(stateInicial);
     
-    const Seleccionar = () => (
+    const SelectMoneda = () => (
         <Fragment>
             <Label>{label}</Label>
             <Select
@@ -47,7 +47,7 @@ const useMoneda = (label, stateInicial, opciones) => {
     );
 
     // Devolver state, interfaz y función que modifica el state
-    return [state, Seleccionar];
+    return [state, SelectMoneda];
 }
 
 export default useMoneda;
